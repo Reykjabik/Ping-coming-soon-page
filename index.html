@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Ping coming soon page</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- 1. Header -->
+    <header class="header">
+      <img src="./images/logo.svg" alt="ping logo" class="logo">
+      <h1>We are launching <span>soon!</span></h1>
+      <p>Subscribe and get notified</p>
+    </header>
+
+    <!-- 2. Form -->
+
+    <form action="/" class="form" id='form' novalidate>
+      <div class="input-container">
+        <input type="email" id='email' class="email" placeholder='Your email adress...' required>
+      <small class='error-msg' id='error-msg'>Please provide a valid email address</small>
+      <small class='empty-msg' id='empty-msg'>Whoops! It looks like you forgot to add your email</small>
+      
+      </div>      
+      <button class="btn" id='btn'>Notify Me</button>
+    </form>
+    
+
+    <!-- 3. Img -->
+    <img class='hero-img' src="./images/illustration-dashboard.png" alt="dashboard">
+
+    <!-- 4. Social -->
+    <div class='social-footer'>
+      <div class="social">
+
+        <div class="circle">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+
+        <div class="circle">
+          <i class="fab fa-twitter"></i>
+        </div>
+
+        <div class="circle">
+          <i class="fab fa-instagram"></i>
+        </div>
+      
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/">Reykjabik</a>.
+    </p>
+  </footer>
+
+  <script src='script.js'></script>
+</body>
+
+</html>

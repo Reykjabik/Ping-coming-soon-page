@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --primary-bl: hsl(223, 87%, 63%);
+
+  --secondary-bl: hsl(223, 100%, 88%);
+  --secondary-bl-trans: hsla(223, 100%, 88%, 0.7);
+  --secondary-rd: hsl(354, 100%, 66%);
+
+  --neutral-gr: hsl(0, 0%, 59%);
+  --neutral-vd-bl: hsl(209, 33%, 12%);
+
+  --borders: #cdd3e3;
+
+  --f-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--f-size);
+  font-family: "Libre Franklin", sans-serif;
+  width: max(100vw, 375px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 14%;
+  padding: 5rem 0 2.5rem;
+}
+
+header p {
+  margin-block: 1.5rem;
+  font-size: clamp(0.625rem, 1.5vw, 1rem);
+}
+
+h1 {
+  color: var(--neutral-gr);
+  /* Font size goes from 20px to 36px */
+  font-size: clamp(1.25rem, 3.5vw, 2.25rem);
+  font-weight: 300;
+}
+
+span {
+  color: var(--neutral-vd-bl);
+  font-weight: 700;
+}
+/*********
+** Form **
+*********/
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 550px) {
+  form {
+    flex-direction: row;
+    margin-inline: 0;
+  }
+}
+
+form .email {
+  width: clamp(17.625rem, 35vw, 26.25rem); /* 282px -> 420px */
+  padding: 0.75rem 1.8125rem;
+  border-radius: 2rem;
+  outline: none;
+  border: 2px solid var(--borders);
+  font-family: inherit;
+  height: clamp(44px, 5vw, 55px);
+}
+
+form .email:hover {
+  border: 2px solid var(--primary-bl);
+}
+
+form.wrong .email,
+form.wrong .email:hover,
+form.wrong .email.focus {
+  border: 2px solid var(--secondary-rd);
+}
+
+.email::placeholder {
+  color: var(--borders);
+  font-size: clamp(0.6875rem, 1.5vw, 1rem);
+}
+
+form .btn {
+  margin-top: 0.5625rem;
+  padding: 0.75rem 1.8125rem;
+  border-radius: 2rem;
+  background-color: var(--primary-bl);
+  border: 0;
+  color: #fff;
+  width: 282px; /* 200px -> 282px */
+  height: clamp(44px, 5vw, 55px);
+  box-shadow: 0 8px 10px 3px var(--secondary-bl-trans);
+  cursor: pointer;
+  outline: none;
+  font-size: clamp(0.6875rem, 1.5vw, 1rem);
+}
+
+form .btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 550px) {
+  form .btn {
+    margin-top: 0;
+    margin-left: min(1rem, 1.1vw);
+    width: 12.5rem;
+  }
+}
+
+.error-msg,
+.empty-msg {
+  color: var(--secondary-rd);
+  margin: 0.5rem 2rem;
+  display: none;
+  font-size: clamp(0.625rem, 1.5vw, 0.75rem);
+}
+
+/**********
+** Image **
+**********/
+
+.hero-img {
+  width: max(320px, 60vw);
+  max-width: 38.125rem;
+  padding: 6.1875rem 0;
+  margin: 0 auto;
+}
+
+/***********
+** Social **
+***********/
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.6875rem;
+}
+
+.circle {
+  border: 2px solid var(--borders);
+  border-radius: 50%;
+  padding: 0.375rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle:hover {
+  border: 2px solid var(--primary-bl);
+  background-color: var(--primary-bl);
+}
+
+.circle:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.circle i {
+  color: var(--primary-bl);
+}
+
+/* Changes i color if circle is hovered */
+.circle i:hover,
+.circle:hover i:not(:hover) {
+  color: #fff;
+}
+
+@media screen and (min-width: 550px) {
+  .circle {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .circle:not(:last-child) {
+    margin-right: 0.6875rem;
+  }
+
+  .circle i {
+    font-size: 1rem;
+  }
+}
+
+.social-footer p {
+  font-size: 0.625rem;
+  text-align: center;
+  color: var(--neutral-gr);
+}
+
+/*****************
+** Attribution  **
+*****************/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
