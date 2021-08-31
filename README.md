@@ -34,12 +34,22 @@ Users should be able to:
 ### Screenshots
 
 :computer: **Desktop**
+
+Desktop - Standard
 ![Desktop](./desktop.png)
+
+Desktop - With an empty email input error
 ![Desktop - Empty email error](./desktop_empty_email.png)
 
 :iphone: **Mobile**
+
+Mobile - Standard
 ![Mobile](./mobile.png)
+
+Mobile - With wrong email error and button hover
 ![Mobile - Wrong email and button hover](./mobile_wrong_email_hover.png)
+
+Mobile - Icon hover
 ![Mobile - Icons hover](./mobile_icons_hover.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
