@@ -31,16 +31,16 @@ Users should be able to:
 	- The `input` field is empty. The message for this error should say *"Whoops! It looks like you forgot to add your email"*
 	- The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Please provide a valid email address"*
 
-### Screenshot
+### Screenshots
 
 :computer: **Desktop**
 ![Desktop](./desktop.png)
-![Desktop - Empty email error](./desktop empty email.png)
+![Desktop - Empty email error](./desktop_empty_email.png)
 
 :iphone: **Mobile**
 ![Mobile](./mobile.png)
-![Mobile - Wrong email and button hover](./mobile wrong email hover.png)
-![Mobile - Icons hover](./mobile icons hover.png)
+![Mobile - Wrong email and button hover](./mobile_wrong_email_hover.png)
+![Mobile - Icons hover](./mobile_icons_hover.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
