@@ -1,4 +1,3 @@
-// We need the form, the input and the error-msg
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const errorMsg = document.getElementById('error-msg');
@@ -14,9 +13,7 @@ button.addEventListener('click', (e)=> {
     } else if (!isValidEmail(email.value)) {
         showError('error');
     } else {
-        form.classList.remove('wrong');
-        errorMsg.style.display= 'none';
-        emptyMsg.style.display = 'none';
+        resetErrorStyles();
     }
 });
 
@@ -28,6 +25,12 @@ function showError(str) {
         errorMsg.style.display = 'block';
     }
     this.style.display= 'none';
+}
+
+function resetErrorStyles(){
+    form.classList.remove('wrong');
+    errorMsg.style.display= 'none';
+    emptyMsg.style.display = 'none';
 }
 
 function isValidEmail(str) {
