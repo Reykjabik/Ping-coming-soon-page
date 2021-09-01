@@ -85,7 +85,7 @@ This sets a minimum (1.25rem), maximum (2.25rem), and ideal size (3.5vw). It wil
 
 I find this *ideal size* a tricky thing to get, and it's taken me a bit of hit and miss.
 
-In the same line, I am trying to focus on setting minimum and maximum widths or heights, rather than fixed ones. This I learned from [Kevin Powell] (https://www.youtube.com/watch?v=bn-DQCifeQQ) and I think this way your designs became much more powerful in terms on responsiveness.
+In the same line, I am trying to focus on setting minimum and maximum widths or heights, rather than fixed ones. This I learned from [Kevin Powell](https://www.youtube.com/watch?v=bn-DQCifeQQ) and I think this way your designs became much more powerful in terms on responsiveness.
 
 ### Continued development
 
