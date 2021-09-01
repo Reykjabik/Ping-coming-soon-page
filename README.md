@@ -42,14 +42,14 @@ Desktop - With an empty email input error
 
 :iphone: **Mobile**
 
-Mobile - Standard
-<img src="./mobile.png" alt="alt text" height="600px">
+Mobile - Standard<br>
+<img src="./mobile.png" alt="mobile screenshot" height="600px">
 
-Mobile - With wrong email error and button hover
-![Mobile - Wrong email and button hover](./mobile_wrong_email_hover.png)
+Mobile - With wrong email error and button hover<br>
+<img src="./mobile_wrong_email_hover.png" alt="mobile screenshot email error" height="600px">
 
-Mobile - Icon hover
-![Mobile - Icons hover](./mobile_icons_hover.png)
+Mobile - Icon hover<br>
+<img src="./mobile_icons_hover.png" alt="mobile screenshot icon hover" height="600px">
 
 ### Links
 
