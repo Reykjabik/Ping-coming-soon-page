@@ -12,6 +12,7 @@ button.addEventListener('click', (e)=> {
         showError('empty');
     } else if (!isValidEmail(email.value)) {
         showError('error');
+        email.setAttribute("aria-invalid", true);
     } else {
         resetErrorStyles();
     }

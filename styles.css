@@ -26,7 +26,7 @@
 body {
   font-size: var(--f-size);
   font-family: "Libre Franklin", sans-serif;
-  width: max(100vw, 375px);
+  width: max(98vw, 375px);
   display: flex;
   flex-direction: column;
   justify-content: center;
