@@ -85,24 +85,26 @@ This sets a minimum (1.25rem), maximum (2.25rem), and ideal size (3.5vw). It wil
 
 I find this *ideal size* a tricky thing to get, and it's taken me a bit of hit and miss.
 
-In the same line, I am trying to focus on setting minimum and maximum widths or heights, rather than fixed ones. This I learned from [Kevin Powell](https://www.youtube.com/watch?v=bn-DQCifeQQ) and I think this way your designs became much more powerful in terms on responsiveness.
+In the same line, I am trying to focus on setting minimum and maximum widths or heights, rather than fixed ones. This I learned from [Kevin Powell](https://www.youtube.com/watch?v=bn-DQCifeQQ) and I think this way your designs become much more powerful in terms on responsiveness.
 
 ### Continued development
 
 I still feel my CSS is a bit messy, with a few lines repeating here and there yet with some differences. For instance, things like:
 
-```display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
+```
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 ```
 
 and
 
-```display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+```
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 ```
 
 Almost the same code, just one line of difference. I know I can just create two classes, for instance, `flex-r` for flex row and `flex-c` for flex column, and asign them to the corresponding elements. 
