@@ -43,7 +43,7 @@ Desktop - With an empty email input error
 :iphone: **Mobile**
 
 Mobile - Standard
-![Mobile](./mobile.png)
+<img src="./mobile.png" alt="alt text" height="600px">
 
 Mobile - With wrong email error and button hover
 ![Mobile - Wrong email and button hover](./mobile_wrong_email_hover.png)
